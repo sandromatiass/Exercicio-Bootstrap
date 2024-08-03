@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./lib/bootstrap.min.css">
+  <link rel="stylesheet" href="./main.css">
+  <title>Exercício Bootstrap</title>
+</head>
+<body>
+  <header id="cabecalho">
+    <div class="navbar navbar-expand-lg">
+      <div class="container">
+        <h1>
+          <img src="./imagens/logo.png" alt="log space EBAC" class="logo"> Space EBAC
+        </h1>
+        <button data-bs-toggle="collapse" type="button" class="navbar-toggler" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav id="menu" class="collapse navbar-collapse justify-content-end">
+          <ul class="nav navbar-nav nav-pills">
+            <li clas="nav-item"><a class="nav-link active" href="#inicio">Início</a></li>
+            <li clas="nav-item"><a class="nav-link" href="#artigos">Artigos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div data-bs-spy="scroll">
+    <section id="inicio">
+      <div class="container-carousel">
+        <div id="carousel-inicio" class="carousel carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+              <img class="d-block w-100" src="./imagens/galaxyOne.jpg" alt="Imagem espaço 1" >
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+              <img class="d-block w-100" src="./imagens/galaxyTwo.jpg" alt="Imagem espaço 2" >
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+              <img class="d-block w-100" src="./imagens/galaxyThree.jpg" alt="Imagem espaço 3" >
+            </div>
+          </div>
+          <button data-bs-slide="prev" data-bs-target="#carousel-inicio" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button data-bs-slide="next" data-bs-target="#carousel-inicio" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-inicio" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-inicio" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-inicio" data-bs-slide-to="2"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="artigos" class="container-noticias">
+      <div class="container">
+        <h2>Notícias</h2>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <article class="card">
+              <img src="./imagens/elonMuskArticle.jpg" alt="Elon Musk">
+              <div class="card-body">
+                <h4 class="card-title">
+                  Elon Musk inova a corrida espacial mais uma vez
+                </h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates soluta quod similique at ad rem cupiditate excepturi sint ex quos repudiandae doloribus itaque dolorem, nam tempore officia ipsa magni deleniti.
+                </p>
+                <a href="#" class="btn btn-primary">Ver mais</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <article class="card">
+              <img src="./imagens/spacexArtigo.jpg" alt="Imagem SpaceX">
+              <div class="card-body">
+                <h4 class="card-title">
+                  SpaceX sai novamente na frente
+                </h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates soluta quod similique at ad rem cupiditate excepturi sint ex quos repudiandae doloribus itaque dolorem, nam tempore officia ipsa magni deleniti.
+                </p>
+                <a href="#" class="btn btn-primary">Ver mais</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <article class="card">
+              <img src="./imagens/programacaoArtigo.jpg" alt="Programador programando">
+              <div class="card-body">
+                <h4 class="card-title">
+                  Programadores se destacam no programa da NASA
+                </h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates soluta quod similique at ad rem cupiditate excepturi sint ex quos repudiandae doloribus itaque dolorem, nam tempore officia ipsa magni deleniti.
+                </p>
+                <a href="#" class="btn btn-primary">Ver mais</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    &copy; Space EBAC - todos os direitos resevados.
+  </footer>
+  <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
